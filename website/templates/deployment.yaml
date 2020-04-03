@@ -14,7 +14,7 @@ spec:
         app: "{{ .Release.Name }}-{{ .Chart.Version }}"
     spec:
       containers:
-      - name: {{ .Values.image.containerName | quote }}
+      - name: {{ .Values.app.containerName | quote }}
         image: "{{ .Values.image.name }}:{{ .Values.image.version }}" 
         resources:
           requests:
