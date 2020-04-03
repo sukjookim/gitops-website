@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  website:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2020-04-03T11:05:50.284613804+09:00"
+    description: This is the static website deployed via gitops
+    digest: aa3f1d26fb920a9b0e71f551c1fcc4e9656176c4192410f4ff0d1a96892b848b
+    name: website
+    type: application
+    urls:
+    - website-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-04-03T11:05:50.284188697+09:00"

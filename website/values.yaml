@@ -1,0 +1,18 @@
+app:
+  namespace: website
+  replicaCount: 3
+  containerName: website-container
+image:
+  name: 192.168.0.106:32002/repository/toast-docker/comicbox 
+  version: v1
+resources: 
+  reqMem: 128Mi 
+  reqCPU: 50m 
+  maxMem: 128Mi 
+  maxCPU: 100m
+server: 
+  containerPort: 80
+service:
+  name: website-svc
+  type: NodePort
+  port: 80
