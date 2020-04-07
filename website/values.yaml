@@ -1,6 +1,6 @@
 app:
   namespace: website
-  replicaCount: 3
+  replicaCount: 5
   containerName: website-container
 image:
   name: 192.168.0.106:32002/repository/toast-docker/comicbox 
@@ -16,3 +16,18 @@ service:
   name: website-svc
   type: NodePort
   port: 3000
+
+
+
+app2:
+  namespace: website2
+  replicaCount: 5
+  containerName: website-container2
+  image: 192.168.0.106:32002/repository/toast-docker/website2
+  version: v1
+  port: 80
+
+service2:
+  name: website2-svc
+  type: NodePort
+  port: 80

@@ -1,0 +1,27 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+  name: website2
+  namespace: {{ .Values.app2.namespace }} 
+spec:
+  replicas: {{ int .Values.app2.replicaCount }} 
+  selector:
+    matchLabels:
+      app: website2
+  template: 
+    metadata:
+      labels:
+        app: website2
+    spec:
+      containers:
+      - name: {{ .Values.app2.containerName | quote }}
+        image: "{{ .Values.app2.image.name }}:{{ .Values.app2.image.version }}" 
+        resources:
+          requests:
+            memory: {{ .Values.resources.reqMem | quote }} 
+            cpu: {{ .Values.resources.reqCPU | quote }}
+          limits:
+            memory: {{ .Values.resources.maxMem | quote }} 
+            cpu: {{ .Values.resources.maxCPU | quote }}
+        ports:
+        - containerPort: {{ .Values.app2.port }} 

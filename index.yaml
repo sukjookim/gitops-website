@@ -3,7 +3,18 @@ entries:
   website:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-04-03T11:26:05.363121431+09:00"
+    created: "2020-04-07T15:58:10.561396963+09:00"
+    description: This is the nodejs website deployed via gitops and apache2 static
+      website
+    digest: 4e20ab9236a2b33ebb9ffd33e5859bcd71893abacf14149eb4b9332a5f4cb7a6
+    name: website
+    type: application
+    urls:
+    - website-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-04-07T15:58:10.561072888+09:00"
     description: This is the nodejs website deployed via gitops
     digest: 19749f9791b5fc4a0c62b33d4233a5f3c710bbb6a9441d9831093489db668fe5
     name: website
@@ -13,7 +24,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-04-03T11:26:05.362473952+09:00"
+    created: "2020-04-07T15:58:10.560702812+09:00"
     description: This is the static website deployed via gitops
     digest: d77f3ad8e14d177259e9bf1489041a33cc9c8f59f603e7075c5f5d75da9b1dc5
     name: website
@@ -21,4 +32,4 @@ entries:
     urls:
     - website-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-03T11:26:05.361958321+09:00"
+generated: "2020-04-07T15:58:10.549744639+09:00"
