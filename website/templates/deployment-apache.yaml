@@ -13,6 +13,8 @@ spec:
       labels:
         app: website2
     spec:
+      imagePullSecrets:
+      - name: regcred2
       containers:
       - name: {{ .Values.app2.containerName | quote }}
         image: "{{ .Values.app2.image }}:{{ .Values.app2.version }}" 
