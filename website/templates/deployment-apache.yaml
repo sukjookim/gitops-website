@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.app2.containerName | quote }}
-        image: "{{ .Values.app2.image.name }}:{{ .Values.app2.image.version }}" 
+        image: "{{ .Values.app2.image }}:{{ .Values.app2.version }}" 
         resources:
           requests:
             memory: {{ .Values.resources.reqMem | quote }} 
